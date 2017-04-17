@@ -1,5 +1,5 @@
 package entites;
-
+import java.util.Random;
 /**
  * Created by dilhan.
  */
@@ -13,12 +13,19 @@ public class creature {
     int str;
     int dex;
     int intel;
+    int ac;
+    int damage;
     int tempstr;
     int tempdex;
     int tempintel;
-    int ac;
+    int tempac;
+
+    Random rand = new Random();
+
     String name;
 
+    public void action(){
 
+    }
 
 }

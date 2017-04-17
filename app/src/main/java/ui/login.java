@@ -44,21 +44,21 @@ import com.squareup.okhttp.OkHttpClient;
  * Created by dilhan.
  */
 
-public class login  extends Activity {
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_example);
-
-        Button button = (Button)findViewById(R.id.myButton);
-
-        button.setOnClickListener(
-                new Button.OnClickListener() {
-                    public void onClick(View v) {
-                        TextView myTextView =
-                                (TextView)findViewById(R.id.myTextView);
-                        myTextView.setText("Button clicked");
-                    }
-                }
-        );
-    }
-}
+//public class login  extends Activity {
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_event_example);
+//
+//        Button button = (Button)findViewById(R.id.myButton);
+//
+//        button.setOnClickListener(
+//                new Button.OnClickListener() {
+//                    public void onClick(View v) {
+//                        TextView myTextView =
+//                                (TextView)findViewById(R.id.myTextView);
+//                        myTextView.setText("Button clicked");
+//                    }
+//                }
+//        );
+//    }
+//}
