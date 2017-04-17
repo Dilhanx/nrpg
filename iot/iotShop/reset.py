@@ -1,7 +1,7 @@
 import pyodbc
 import time
 while(True):    
-    file = open("D:\\nrpgiot\\shop.txt", "r")
+    file = open("shop.txt", "r")
     text = file.readline().split(",")
     print(text)
 
