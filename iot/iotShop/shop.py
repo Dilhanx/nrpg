@@ -2,6 +2,7 @@ import pyodbc
 import requests
 import json
 import time
+from datetime import datetime
 file = open("shop.txt", "r")
 text = file.readline().split(",")
 print(text)
@@ -42,4 +43,8 @@ while(True):
         #SQL query to INSERT a record into the database
         with cursor.execute("INSERT INTO  shop(nodeID,tier, latitude ,longitude)  VALUES ("+nodeId+","+tier+","+latitude+","+longitude+")"): 
             print ('Successfuly Inserted!')    
+            w = open("logger.txt","a")
+            w.write(str(datetime.now())+"\n")
+            w.close()
+            
     time.sleep(300)
